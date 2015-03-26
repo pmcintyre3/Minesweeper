@@ -17,6 +17,30 @@ have a maximum of 10 rows and 10 columns. To win, all mines must be
 marked with the marked command and all other tiles must have been 
 revealed.
 
+How to Play
+-----------
+
+Starting the game requires you to compile and run from the command line.
+To do this, skip to the 'Makefile' section below.
+
+Upon starting the game, a board will be drawn on the screen with the
+corresponding width and height and you will be prompted for an action. 
+There are 5 options to choose from: Reveal, Mark, Guess, Help, and Quit. 
+Each option can be typed entirely or by just typing the first letter. After
+selection an option, type it when prompted followed by a space and two numbers,
+row and column, separated by a space. For example, if you wish to reveal the
+space at (1,2), you would type "reveal 1 2" or "r 1 2". Both are acceptable
+forms of input. Each time you input an action, the gameboard will update. The
+game continues until you win or reveal a mine.
+
+How to Win
+----------
+Knowing where the mines are located is very important. Strategically reveal
+portions of the map until you have located a mine. You "mark" portions of the
+grid where you suspect a mine to be located. If you happen to mark all of the
+mines and reveal the rest of the map, you win!
+
+
 Makefile
 --------
 
@@ -51,3 +75,8 @@ contain the number of rows and columns seperated by whitespace (' ').
 The second row contains the number of mines. The rows that follow are
 coordinates for the mines. The number of mine coordinate lines cannot
 exceed the number of mines on the second row, or will result in an error.
+
+Version
+-------
+> 1.0.1: Updated makefile and readme. Now hosted on GitHub!
+> 1.0: Finished project and turned in

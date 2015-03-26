@@ -1,10 +1,10 @@
-all: Minesweeper.cpp main.cpp
+all: Minesweeper.o main.o
 	g++ -g Minesweeper.o main.o -o Minesweeper
 
-Minesweeper: Minesweeper.cpp
+Minesweeper.o: Minesweeper.cpp
 	g++ -g -c Minesweeper.cpp
 
-main: main.cpp
+main.o: main.cpp
 	g++ -g -c main.cpp
 
 clean:
