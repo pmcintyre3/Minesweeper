@@ -1,0 +1,53 @@
+Minesweeper - Recursive Edition
+Phillip McIntyre
+CSCI 1730
+
+  /\/\ (_)_ __   ___  _____      _____  ___ _ __   ___ _ __
+ /    \| | '_ \ / _ \/ __\ \ /\ / / _ \/ _ \ '_ \ / _ \ '__|
+/ /\/\ \ | | | |  __/\__ \\ V  V /  __/  __/ |_) |  __/ |
+\/    \/_|_| |_|\___||___/ \_/\_/ \___|\___| .__/ \___|_|
+                                 RECURSIVE |_| EDITION
+
+What is It?
+-----------
+
+Minesweeper Recursive Edition is a terminal based implimentation
+of Minesweeper using recursion to detect nearby mines. The game can 
+have a maximum of 10 rows and 10 columns. To win, all mines must be
+marked with the marked command and all other tiles must have been 
+revealed.
+
+Makefile
+--------
+
+To run the program, you must compile each of the components. To compile the
+main function, type the following into the command line
+
+     $make main
+
+To compile the Minesweeper.cpp file, type the following into the 
+command line
+
+     $make Minesweeper
+
+To create the Minesweeper executable, type the following into 
+the command line
+
+    $make
+
+To run the file, type the following, where 'seed1.txt' is a premade
+seed file.
+     
+     $./Minesweeper seed1
+
+To delete extraneous files, type the following into the command line
+
+     $make clean
+
+Seed File
+---------
+The seed file must be organized by line. The first line must 
+contain the number of rows and columns seperated by whitespace (' ').
+The second row contains the number of mines. The rows that follow are
+coordinates for the mines. The number of mine coordinate lines cannot
+exceed the number of mines on the second row, or will result in an error.

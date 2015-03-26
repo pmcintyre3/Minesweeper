@@ -1,0 +1,14 @@
+p1:
+total 928
+-rw-r--r--. 1 ugrad   2659 Jul  1 22:32 main.cpp
+-rw-r--r--. 1 ugrad 295264 Jul  1 22:44 main.o
+-rw-r--r--. 1 ugrad    214 Jul  1 22:32 makefile
+-rwxr-xr-x. 1 ugrad 257553 Jul  1 22:44 Minesweeper
+-rw-r--r--. 1 ugrad  13104 Jul  1 22:32 Minesweeper.cpp
+-rw-r--r--. 1 ugrad    742 Jul  1 22:32 Minesweeper.h
+-rw-r--r--. 1 ugrad 350056 Jul  1 22:44 Minesweeper.o
+-rw-r--r--. 1 ugrad   1588 Jul  1 22:44 README
+-rw-r--r--. 1 ugrad     69 Jul  1 22:34 README~
+-rw-r--r--. 1 ugrad      0 Jul  1 22:47 rec54768
+-rw-r--r--. 1 ugrad     23 Jul  1 22:32 seed1
+/home/ugrads/mcintyre/cs1730/p1:/home/work/cs1730
