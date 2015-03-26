@@ -44,23 +44,29 @@ mines and reveal the rest of the map, you win!
 Makefile
 --------
 
-To run the program, you must compile each of the components. To compile the
-main function, type the following into the command line
+To run the program, you must compile each of the components. To compile everything
+at once, type the following into the command line (typing 'all' is optional)
+     
+     $make (all)
+
+
+You may compile the files individually if you wish. To compile the
+main function separately, type the following into the command line
 
      $make main
 
-To compile the Minesweeper.cpp file, type the following into the 
-command line
+Additionally, to compile the Minesweeper.cpp file, type the following into 
+the command line
 
      $make Minesweeper
 
-To create the Minesweeper executable, type the following into 
-the command line
+Finally, we create the Minesweeper executable by typing the following into 
+the command line (typing 'all' is optional)
 
-    $make
+    $make (all)
 
-To run the file, type the following, where 'seed1.txt' is a premade
-seed file.
+To run the file, type the following, where 'seed1' is a premade
+seed file. Please note that the seed file does not have an extention.
      
      $./Minesweeper seed1
 
@@ -75,6 +81,19 @@ contain the number of rows and columns seperated by whitespace (' ').
 The second row contains the number of mines. The rows that follow are
 coordinates for the mines. The number of mine coordinate lines cannot
 exceed the number of mines on the second row, or will result in an error.
+Example seed file ('seed1'):
+
+	10 10
+	4
+	0 0
+	1 1
+	2 2
+	3 3
+
+The Minesweeper grid will be set to 10 x 10 due to the first line. The second
+line lists the number of mines to be added ('4'). The subsequent lines are the
+coordinates for the individual mines, listed 'row col'. Note there are 4 coordinates
+listed because the second line specifies the number of mines to be 4.
 
 Version
 -------
